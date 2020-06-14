@@ -1,0 +1,48 @@
+* {
+  font-family: "Balsamiq Sans", cursive;
+}
+.morning {
+  background: rgb(224, 210, 7);
+  background: linear-gradient(
+    90deg,
+    rgba(224, 210, 7, 0.5499241933101365) 0%,
+    rgba(121, 103, 9, 0.6507645294445903) 48%,
+    rgba(255, 136, 18, 1) 100%
+  );
+}
+.evening {
+  background: rgb(7, 107, 224);
+  background: linear-gradient(
+    90deg,
+    rgba(7, 107, 224, 0.33703903924851186) 0%,
+    rgba(16, 9, 121, 0.6507645294445903) 48%,
+    rgba(176, 18, 255, 1) 100%
+  );
+}
+.night {
+  background: rgb(7, 114, 224);
+  background: linear-gradient(
+    to top right,
+    rgba(7, 114, 224, 0.5723331568955707) 0%,
+    rgba(0, 7, 99, 0.6507645294445903) 48%,
+    rgba(20, 0, 87, 1) 100%
+  );
+}
+
+/* Card */
+
+.fa-clock {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+#current-time {
+  margin-bottom: 225px;
+}
+.fa-plus-circle {
+  color: orange;
+  margin-top: 2px;
+  background: transparent;
+}
+.degree {
+  font-weight: bolder;
+}
