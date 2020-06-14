@@ -46,3 +46,36 @@
 .degree {
   font-weight: bolder;
 }
+
+@media (max-width: 576px) {
+  #w-desc {
+    font-size: 15px;
+  }
+  #w-string {
+    font-size: 40px;
+    margin-top: 10px;
+  }
+  .morning {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+  .evening {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+  .night {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+  #w-temp-max,
+  #w-temp-min,
+  #w-windspeed {
+    font-size: 20px;
+  }
+}
