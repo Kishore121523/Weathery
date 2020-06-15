@@ -11,6 +11,7 @@ class UI {
     this.time = document.getElementById("w-time");
     this.img = document.getElementById("main-bg");
     this.body = document.getElementById("main-body");
+    this.card = document.getElementById("main-card");
   }
 
   paint(weather) {
@@ -44,19 +45,19 @@ class UI {
     this.time.textContent = `${hhr}:${mmr} ${timezone}`;
 
     // changing image and background
-    if (hh > 6 && hh < 15) {
-      this.img.setAttribute("src", "./image/sunrise.jpg");
-    } else if (hh > 15 && hh < 18) {
+    if (hh >= 6 && hh < 15) {
+      this.img.setAttribute("src", "./image/morning.jpg");
+    } else if (hh >= 15 && hh < 18) {
       this.img.setAttribute("src", "./image/evening.jpg");
     } else {
       this.img.setAttribute("src", "./image/night.jpg");
     }
 
     //changing background gradient
-    if (hh > 6 && hh < 15) {
+    if (hh >= 6 && hh < 15) {
       this.body.classList.remove("night");
       this.body.className = "morning";
-    } else if (hh > 15 && hh < 18) {
+    } else if (hh >= 15 && hh < 18) {
       this.body.classList.remove("morning");
       this.body.className = "evening";
     } else {
