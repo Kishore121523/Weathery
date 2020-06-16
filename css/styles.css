@@ -47,6 +47,20 @@
   font-weight: bolder;
 }
 
+/* Heart */
+#heart {
+  color: rgba(255, 255, 255, 0.1);
+  margin-left: 5px;
+  transition: all 0.5s ease;
+  /* background: transparent !important; */
+}
+#heart:hover {
+  color: rgba(0, 255, 255, 0.8);
+}
+.heartclick {
+  color: rgba(0, 255, 255, 0.8);
+}
+
 @media (max-width: 576px) {
   #w-desc {
     font-size: 15px;
@@ -56,19 +70,19 @@
     margin-top: 10px;
   }
   .morning {
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
   }
   .evening {
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
   }
   .night {
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -77,5 +91,12 @@
   #w-temp-min,
   #w-windspeed {
     font-size: 20px;
+  }
+
+  blockquote p {
+    font-size: 15px;
+  }
+  blockquote cite {
+    font-size: 12px;
   }
 }

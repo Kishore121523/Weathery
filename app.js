@@ -23,6 +23,7 @@ document.getElementById("w-change-btn").addEventListener("click", (e) => {
   storage.setLocationData(city, state);
 
   //Get and display weather
+
   getWeather();
 
   //close modal
@@ -40,3 +41,16 @@ function getWeather() {
 
 //get time
 ui.getTime();
+
+//heart
+document.getElementById("heart").addEventListener("click", (e) => {
+  const cite = document.querySelector("cite");
+  if ($("cite").hasClass("heartclick")) {
+    cite.classList.remove("heartclick");
+    e.target.classList.remove("heartclick");
+  } else {
+    cite.className += "heartclick";
+    e.target.className += " heartclick";
+  }
+  e.preventDefault();
+});

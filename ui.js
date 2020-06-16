@@ -28,10 +28,6 @@ class UI {
     this.tempMax.textContent = `M ${maximumTemp.toFixed(1)}°  ||`;
     const minimumTemp = weather.main.temp_min - 273.15;
     this.tempMin.textContent = `L ${minimumTemp.toFixed(1)}°`;
-    this.lat = weather.coord.lat;
-    this.long = weather.coord.lon;
-    console.log(this.lat);
-    console.log(this.long);
   }
   getTime() {
     var date = new Date();

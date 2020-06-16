@@ -1,25 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Weather</title>
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
+
     <!DOCTYPE html>
     <html lang="en">
     
@@ -35,6 +14,7 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
           rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="./css/styles.css" />
     </head>
     
@@ -42,8 +22,8 @@
       <!-- UI -->
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-12  mx-auto  p-5 text-dark">
-            <div class="card text-white bg-dark h-100" id="main-card">
+          <div class="col-md-6 col-12  m-auto  p-5 text-dark">
+            <div class="card text-white bg-dark" id="main-card">
               <img class="card-img-top img-fluid" id="main-bg" style=" box-shadow: 0 15px 16px -3px black;" />
               <div class="card-body">
                 <div class="card-title mb-0">
@@ -57,6 +37,13 @@
                 <div class="text-center mx-auto display-2 my-0"><p class="degree mb-0" id="w-string"><p></div>
                 <div class="text-center mx-auto temperature"><span id="w-temp-max" class="hl mb-0 h5"> </span><span id="w-temp-min" class="hl mb-0 ml-2 h5"></span></div>
                 <div class="text-center mx-auto mt-2"><p id="w-windspeed" class="hl mb-0 h5"><p></div>
+                  <blockquote class="blockquote mb-0 mt-5 text-center">
+                    <p>loading...</p>
+                    <footer class="blockquote-footer">
+                      <cite title="Source Title"></cite>
+                      <a id="heart" href="#"><i class="fas fa-heart "></i></a>
+                    </footer>
+                  </blockquote>
                 </div>
             </div>
             </div>
@@ -143,6 +130,7 @@
       // Get the current year for copyright
       $("#year").text(new Date().getFullYear());
     </script>
+    <script src="./quote.js"></script>
     <script src="./storage.js"></script>
     <script src="./ui.js"></script>
     <script src="./weather.js"></script>
